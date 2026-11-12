@@ -13,12 +13,12 @@
 <meta name="theme-color" content="#3E5B3A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --papel:#F4EFE3; --papel-2:#EBE4D2; --blanco:#FFFDF8; --tinta:#2B2A24; --suave:#5E5A4E; --linea:#DDD4BE;
   --verde:#3E5B3A; --verde-osc:#2B4128; --verde-claro:#DCE4D3; --tierra:#9C6B3F; --maiz:#D9A441; --barro:#6B5236;
-  --t-titulo:'Fraunces', Georgia, serif; --t-texto:'Source Sans 3', system-ui, sans-serif; --radio:18px;
+  --t-titulo:'Nunito', system-ui, sans-serif; --t-texto:'Source Sans 3', system-ui, sans-serif; --radio:18px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -27,7 +27,7 @@ body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--t-tex
 img,svg{display:block;max-width:100%}
 a{color:inherit}
 p{margin:0}
-h1,h2,h3{font-family:var(--t-titulo);font-weight:600;line-height:1.08;margin:0;letter-spacing:-.01em;font-optical-sizing:auto}
+h1,h2,h3{font-family:var(--t-titulo);font-weight:800;line-height:1.08;margin:0;letter-spacing:-.02em}
 h1{font-size:clamp(40px,6.2vw,68px)}
 h2{font-size:clamp(31px,4.3vw,48px)}
 h3{font-size:24px;line-height:1.2}
@@ -48,7 +48,7 @@ section{padding:96px 0}
 /* barra */
 .barra{position:sticky;top:0;z-index:30;background:rgba(244,239,227,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--linea)}
 .barra .env{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
-.marca{display:flex;align-items:center;gap:10px;font-family:var(--t-titulo);font-weight:700;font-size:25px;text-decoration:none}
+.marca{display:flex;align-items:center;gap:10px;font-family:var(--t-titulo);font-weight:800;font-size:25px;text-decoration:none}
 .marca svg{width:34px;height:34px}
 .nav{display:flex;gap:26px;align-items:center}
 .nav a{text-decoration:none;font-weight:600;font-size:16px;color:var(--suave)}
@@ -73,7 +73,7 @@ section{padding:96px 0}
 /* historia */
 .historia{background:var(--blanco);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
 .historia .env{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
-.historia blockquote{margin:0;font-family:var(--t-titulo);font-size:clamp(26px,3vw,34px);line-height:1.25;font-weight:500}
+.historia blockquote{margin:0;font-family:var(--t-titulo);font-size:clamp(26px,3vw,34px);line-height:1.25;font-weight:700}
 .historia .firma{margin-top:18px;color:var(--suave);font-size:17px}
 .historia p+p{margin-top:16px}
 .dibujo{color:var(--verde)}
@@ -88,7 +88,7 @@ section{padding:96px 0}
 .dia{background:var(--papel-2)}
 .tablero{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:52px}
 .momento{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:22px 20px 0;display:flex;flex-direction:column;overflow:hidden}
-.hora{font-family:var(--t-titulo);font-size:34px;color:var(--tierra);font-weight:600;line-height:1;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.hora{font-family:var(--t-titulo);font-size:34px;color:var(--tierra);font-weight:800;line-height:1;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .hora small{font-family:var(--t-texto);font-size:13px;color:var(--suave);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
 .momento h3{font-size:22px;margin:12px 0 6px}
 .momento p{color:var(--suave);font-size:16px}
@@ -136,7 +136,7 @@ section{padding:96px 0}
 .paso p{color:var(--suave);font-size:17px}
 /* precio */
 .precio{max-width:640px;margin:48px auto 0;background:var(--blanco);border:2px solid var(--verde);border-radius:24px;padding:40px;text-align:center}
-.precio .grande{font-family:var(--t-titulo);font-size:34px;font-weight:600}
+.precio .grande{font-family:var(--t-titulo);font-size:34px;font-weight:800}
 .precio ul{text-align:left;margin:26px 0 30px;padding:0;list-style:none}
 .precio li{padding:10px 0 10px 32px;position:relative;border-bottom:1px solid var(--papel-2)}
 .precio li svg{position:absolute;left:0;top:13px;width:20px;height:20px;color:var(--verde)}
@@ -215,7 +215,7 @@ footer a{text-decoration:none}
 <path d="M220 190V100a20 20 0 0 1 40 0v90"/><path d="M220 120h40M220 145h40M220 170h40"/><path d="M216 100h48"/>
 <g transform="translate(150 150)"><path d="M0 40V0M0 0l-14-9M0 0l14-9M0 0l-9 14M0 0l9 14"/><circle cx="0" cy="0" r="2.5"/></g>
 <path d="M280 70c6-12 22-14 30-4M262 52c4-6 12-7 16-2"/>
-</svg></div><div><span class="antetitulo">Hecha en un tambo</span><blockquote>La empezamos para ordenar el tambo de nuestra familia: las tareas, la guachera, los litros y la comida, todo en un mismo lugar.</blockquote><p class="firma">Un tambo familiar de Suardi, Santa Fe</p></div></div></section>
+</svg></div><div><span class="antetitulo">Hecha en un tambo</span><blockquote>La empezamos para ordenar el tambo de nuestra familia: las tareas, la guachera, los litros y la comida, todo en un mismo lugar.</blockquote><p class="firma">Un tambo familiar del interior</p></div></div></section>
 <section class="dia" id="un-dia"><div class="env"><div class="centro"><span class="antetitulo">Un día en el tambo</span><h2>Así se usa, de la mañana a la noche</h2><p class="bajada">Pantallas reales de la app, con datos de ejemplo.</p></div><div class="tablero"><article class="momento"><p class="hora">4:30 <small>Ordeñe</small></p><h3>Se cargan los litros</h3><p>El tambero los anota desde el celular, en el corral. Si dieron menos que la semana pasada, la app avisa.</p><div class="tel"><img src="img/litros.webp" alt="Los litros de ayer y la agenda del día" width="400" height="820" loading="lazy"></div></article><article class="momento"><p class="hora">7:00 <small>Guachera</small></p><h3>Calostro y vacunas</h3><p>Pasa el bastón por la caravana y carga lo de esa ternera. Las enfermas quedan marcadas.</p><div class="tel"><img src="img/guachera.webp" alt="Las terneras de la guachera" width="400" height="820" loading="lazy"></div></article><article class="momento"><p class="hora">10:00 <small>Campo</small></p><h3>Cada uno, su tarea</h3><p>Racionar, revisar bebederos, llevar rollos. La marca hecha aunque no haya señal.</p><div class="tel"><img src="img/tareas.webp" alt="Las tareas del día" width="400" height="820" loading="lazy"></div></article><article class="momento"><p class="hora">19:00 <small>En casa</small></p><h3>Vos ves cómo terminó</h3><p>Litros, partos, tareas hechas y hasta cuándo alcanza el silo. Sin llamar a nadie.</p><div class="tel"><img src="img/comida.webp" alt="Hasta cuándo alcanza la comida" width="400" height="820" loading="lazy"></div></article></div></div></section>
 <section class="senal" id="sin-senal"><div class="env"><div><span class="antetitulo">Pensada para el campo</span><h2>En el corral no hay señal. No importa.</h2><p class="bajada" style="margin-top:18px">La mayoría de las apps se traban sin internet. Esta no: lo que se carga queda guardado en el celular y se manda solo cuando vuelve la señal.</p><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Se carga igual: litros, partos, calostro, tareas, comida</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Se manda sola cuando vuelve la señal, en orden</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Un ternero que nace sin señal ya se puede usar enseguida</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Si dos personas cambian lo mismo, no se pisa: avisa</li></ul></div><div style="position:relative"><div class="tel"><img src="img/tareas.webp" alt="Tareas cargadas sin señal" width="400" height="820" loading="lazy"></div><p class="cartel">Sin señal: lo que cargues queda guardado</p></div></div></section>
 <section id="que-hace"><div class="env"><div class="centro"><span class="antetitulo">Qué hace</span><h2>Lo de todos los días, en un solo lugar</h2><p class="bajada">Pensada para el tambo y el campo, no para una oficina. Lo que no usás todos los días, no molesta.</p></div><div class="funciones"><div class="funcion"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M3.5 6l1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/></svg></div><h3>Tareas y personal</h3><p>Cada tarea con su responsable, su fecha y su aviso al celular.</p><ul><li>Se marca cumplida desde el celular</li><li>Tareas que se repiten solas</li><li>Francos, licencias y quién falta hoy</li></ul></div><div class="funcion"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7c-1.5 0-2.5-1-2.5-2.5M19 7c1.5 0 2.5-1 2.5-2.5"/><path d="M6.5 6.5h11l-.8 7.5a4.8 4.8 0 0 1-9.4 0z"/><circle cx="10" cy="15.8" r=".6"/><circle cx="14" cy="15.8" r=".6"/><path d="M9.5 10h.01M14.5 10h.01"/></svg></div><h3>Rodeo y reproducción</h3><p>La agenda del día: qué vaca inseminar, tactar, secar o qué parto viene.</p><ul><li>Parto probable calculado solo</li><li>Estado de cada vaca al día</li><li>Grupos y potreros</li></ul></div><div class="funcion"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2.5h2l.5 3h-3z"/><path d="M9.5 5.5h5v2h-5z"/><path d="M9 7.5h6l1 3v9a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-9z"/><path d="M8 13h3M8 16.5h3"/></svg></div><h3>Guachera</h3><p>Cada ternera desde que nace: calostro, alimentación, vacunas y enfermedades.</p><ul><li>Calostro con °Brix</li><li>Enfermas y días de tratamiento</li><li>Desleche y mortandad</li></ul></div><div class="funcion"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.6 11.2a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8z"/><path d="M5 8a7 4 0 0 1 14 0"/><path d="M9 12.5c1 .7 2 .7 3 0s2-.7 3 0"/></svg></div><h3>Leche</h3><p>Los litros de cada día y el control lechero por vaca, sin cuaderno.</p><ul><li>Avisa si la producción cae</li><li>Lee el recibo de la usina, con la calidad</li><li>Compara lo anotado con lo entregado</li></ul></div><div class="funcion"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V8a4 4 0 0 1 8 0v13"/><path d="M14 21V12h5v9M3 21h18M6 12h8M6 16h8"/></svg></div><h3>Stock: comida y gasoil</h3><p>Cuánto silo, rollos y gasoil queda, y hasta cuándo alcanza.</p><ul><li>Ración por grupo que se descuenta sola</li><li>Recuentos que corrigen el número</li><li>Litros por máquina</li></ul></div><div class="funcion"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19l4-12h10l4 12z"/><path d="M12 7v12M8.5 12h7M5.5 15.5h13"/></svg></div><h3>Campo</h3><p>Lotes sobre el mapa, siembras, aplicaciones, lluvias y rindes.</p><ul><li>Lo que se hizo pasa solo al lote</li><li>Lluvias por campo</li><li>Plan de forraje de la campaña</li></ul></div></div></div></section>
@@ -231,7 +231,7 @@ footer a{text-decoration:none}
   <p class="nota-cta">WhatsApp +54 9 3562 52-6469 · Te contesta una persona, sin compromiso. Si no te sirve, no te vamos a insistir.</p>
 </div></section>
 </main>
-<footer><div class="env"><span class="marca" style="color:#F4EFE3;font-size:21px"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#3E5B3A"/><g fill="none" stroke="#F4EFE3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 30V14"/><path d="M20 14l-6-4M20 14l6-4M20 14l-4 6M20 14l4 6"/><path d="M17 30l3-16 3 16"/><path d="M9 30h22"/></g><circle cx="20" cy="14" r="1.6" fill="#D9A441"/></svg> TamboApp</span><span>Hecho en un tambo de Santa Fe · © 2026</span></div></footer>
+<footer><div class="env"><span class="marca" style="color:#F4EFE3;font-size:21px"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#3E5B3A"/><g fill="none" stroke="#F4EFE3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 30V14"/><path d="M20 14l-6-4M20 14l6-4M20 14l-4 6M20 14l4 6"/><path d="M17 30l3-16 3 16"/><path d="M9 30h22"/></g><circle cx="20" cy="14" r="1.6" fill="#D9A441"/></svg> TamboApp</span><span>Hecho en un tambo del interior · © 2026</span></div></footer>
 <a class="btn btn-wa cta-fija oculta" href="https://wa.me/5493562526469?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20TamboApp%20y%20quiero%20que%20me%20la%20muestren.%20Mi%20tambo%20est%C3%A1%20en%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.1-1.2-.2-.2-.4-.3z"/></svg>Escribinos por WhatsApp</a>
 <script>
 // El botón fijo de WhatsApp aparece recién cuando el del principio ya no se ve (y se esconde en el cierre).

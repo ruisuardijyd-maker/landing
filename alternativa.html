@@ -13,12 +13,12 @@
 <meta name="theme-color" content="#3E5B3A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --papel:#F4EFE3; --papel-2:#EBE4D2; --blanco:#FFFDF8; --tinta:#2B2A24; --suave:#5E5A4E; --linea:#DDD4BE;
   --verde:#3E5B3A; --verde-osc:#2B4128; --verde-claro:#DCE4D3; --tierra:#9C6B3F; --maiz:#D9A441; --barro:#6B5236;
-  --t-titulo:'Fraunces', Georgia, serif; --t-texto:'Source Sans 3', system-ui, sans-serif; --radio:18px;
+  --t-titulo:'Nunito', system-ui, sans-serif; --t-texto:'Source Sans 3', system-ui, sans-serif; --radio:18px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -27,7 +27,7 @@ body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--t-tex
 img,svg{display:block;max-width:100%}
 a{color:inherit}
 p{margin:0}
-h1,h2,h3{font-family:var(--t-titulo);font-weight:600;line-height:1.08;margin:0;letter-spacing:-.01em;font-optical-sizing:auto}
+h1,h2,h3{font-family:var(--t-titulo);font-weight:800;line-height:1.08;margin:0;letter-spacing:-.02em}
 h1{font-size:clamp(40px,6.2vw,68px)}
 h2{font-size:clamp(31px,4.3vw,48px)}
 h3{font-size:24px;line-height:1.2}
@@ -48,7 +48,7 @@ section{padding:96px 0}
 /* barra */
 .barra{position:sticky;top:0;z-index:30;background:rgba(244,239,227,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--linea)}
 .barra .env{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
-.marca{display:flex;align-items:center;gap:10px;font-family:var(--t-titulo);font-weight:700;font-size:25px;text-decoration:none}
+.marca{display:flex;align-items:center;gap:10px;font-family:var(--t-titulo);font-weight:800;font-size:25px;text-decoration:none}
 .marca svg{width:34px;height:34px}
 .nav{display:flex;gap:26px;align-items:center}
 .nav a{text-decoration:none;font-weight:600;font-size:16px;color:var(--suave)}
@@ -73,7 +73,7 @@ section{padding:96px 0}
 /* historia */
 .historia{background:var(--blanco);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
 .historia .env{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
-.historia blockquote{margin:0;font-family:var(--t-titulo);font-size:clamp(26px,3vw,34px);line-height:1.25;font-weight:500}
+.historia blockquote{margin:0;font-family:var(--t-titulo);font-size:clamp(26px,3vw,34px);line-height:1.25;font-weight:700}
 .historia .firma{margin-top:18px;color:var(--suave);font-size:17px}
 .historia p+p{margin-top:16px}
 .dibujo{color:var(--verde)}
@@ -88,7 +88,7 @@ section{padding:96px 0}
 .dia{background:var(--papel-2)}
 .tablero{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:52px}
 .momento{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);padding:22px 20px 0;display:flex;flex-direction:column;overflow:hidden}
-.hora{font-family:var(--t-titulo);font-size:34px;color:var(--tierra);font-weight:600;line-height:1;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.hora{font-family:var(--t-titulo);font-size:34px;color:var(--tierra);font-weight:800;line-height:1;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .hora small{font-family:var(--t-texto);font-size:13px;color:var(--suave);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
 .momento h3{font-size:22px;margin:12px 0 6px}
 .momento p{color:var(--suave);font-size:16px}
@@ -136,7 +136,7 @@ section{padding:96px 0}
 .paso p{color:var(--suave);font-size:17px}
 /* precio */
 .precio{max-width:640px;margin:48px auto 0;background:var(--blanco);border:2px solid var(--verde);border-radius:24px;padding:40px;text-align:center}
-.precio .grande{font-family:var(--t-titulo);font-size:34px;font-weight:600}
+.precio .grande{font-family:var(--t-titulo);font-size:34px;font-weight:800}
 .precio ul{text-align:left;margin:26px 0 30px;padding:0;list-style:none}
 .precio li{padding:10px 0 10px 32px;position:relative;border-bottom:1px solid var(--papel-2)}
 .precio li svg{position:absolute;left:0;top:13px;width:20px;height:20px;color:var(--verde)}
@@ -214,7 +214,7 @@ footer a{text-decoration:none}
 <path d="M220 190V100a20 20 0 0 1 40 0v90"/><path d="M220 120h40M220 145h40M220 170h40"/><path d="M216 100h48"/>
 <g transform="translate(150 150)"><path d="M0 40V0M0 0l-14-9M0 0l14-9M0 0l-9 14M0 0l9 14"/><circle cx="0" cy="0" r="2.5"/></g>
 <path d="M280 70c6-12 22-14 30-4M262 52c4-6 12-7 16-2"/>
-</svg></div><div><span class="antetitulo">Hecha en un tambo</span><blockquote>La empezamos para ordenar el tambo de nuestra familia: las tareas, la guachera, los litros y la comida, todo en un mismo lugar.</blockquote><p class="firma">Un tambo familiar de Suardi, Santa Fe</p><p style="margin-top:22px;color:var(--suave)">Por eso cada pantalla está pensada para quien la usa con las botas puestas: letra grande, pocos botones y que ande aunque no haya señal. No es un programa de oficina adaptado al campo; es al revés.</p></div></div></section>
+</svg></div><div><span class="antetitulo">Hecha en un tambo</span><blockquote>La empezamos para ordenar el tambo de nuestra familia: las tareas, la guachera, los litros y la comida, todo en un mismo lugar.</blockquote><p class="firma">Un tambo familiar del interior</p><p style="margin-top:22px;color:var(--suave)">Por eso cada pantalla está pensada para quien la usa con las botas puestas: letra grande, pocos botones y que ande aunque no haya señal. No es un programa de oficina adaptado al campo; es al revés.</p></div></div></section>
 <section class="senal" id="sin-senal"><div class="env"><div><span class="antetitulo">Pensada para el campo</span><h2>En el corral no hay señal. No importa.</h2><p class="bajada" style="margin-top:18px">La mayoría de las apps se traban sin internet. Esta no: lo que se carga queda guardado en el celular y se manda solo cuando vuelve la señal.</p><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Se carga igual: litros, partos, calostro, tareas, comida</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Se manda sola cuando vuelve la señal, en orden</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Un ternero que nace sin señal ya se puede usar enseguida</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Si dos personas cambian lo mismo, no se pisa: avisa</li></ul></div><div style="position:relative"><div class="tel"><img src="img/tareas.webp" alt="Tareas cargadas sin señal" width="400" height="820" loading="lazy"></div><p class="cartel">Sin señal: lo que cargues queda guardado</p></div></div></section>
 <section class="dia" id="un-dia"><div class="env"><div class="centro"><span class="antetitulo">Un día en el tambo</span><h2>Así se usa, de la mañana a la noche</h2><p class="bajada">Pantallas reales de la app, con datos de ejemplo.</p></div><div class="tablero"><article class="momento"><p class="hora">4:30 <small>Ordeñe</small></p><h3>Se cargan los litros</h3><p>El tambero los anota desde el celular, en el corral. Si dieron menos que la semana pasada, la app avisa.</p><div class="tel"><img src="img/litros.webp" alt="Los litros de ayer y la agenda del día" width="400" height="820" loading="lazy"></div></article><article class="momento"><p class="hora">7:00 <small>Guachera</small></p><h3>Calostro y vacunas</h3><p>Pasa el bastón por la caravana y carga lo de esa ternera. Las enfermas quedan marcadas.</p><div class="tel"><img src="img/guachera.webp" alt="Las terneras de la guachera" width="400" height="820" loading="lazy"></div></article><article class="momento"><p class="hora">10:00 <small>Campo</small></p><h3>Cada uno, su tarea</h3><p>Racionar, revisar bebederos, llevar rollos. La marca hecha aunque no haya señal.</p><div class="tel"><img src="img/tareas.webp" alt="Las tareas del día" width="400" height="820" loading="lazy"></div></article><article class="momento"><p class="hora">19:00 <small>En casa</small></p><h3>Vos ves cómo terminó</h3><p>Litros, partos, tareas hechas y hasta cuándo alcanza el silo. Sin llamar a nadie.</p><div class="tel"><img src="img/comida.webp" alt="Hasta cuándo alcanza la comida" width="400" height="820" loading="lazy"></div></article></div></div></section>
 <section id="problema"><div class="env"><div class="centro"><span class="antetitulo">¿Te suena?</span><h2>El tambo no para. La información, sí.</h2><p class="bajada">Mensajes de WhatsApp que se pierden, el cuaderno del galpón y la planilla que nadie actualiza.</p></div><div class="grilla-3"><div class="dolor"><p class="antes">Antes</p><h3>“¿Quién tenía que hacer eso?”</h3><p>Las tareas se dicen de palabra y nadie sabe si se hicieron.</p><p class="ahora">Ahora cada tarea tiene responsable y fecha, y se marca hecha desde el celular.</p></div><div class="dolor"><p class="antes">Antes</p><h3>El cuaderno del galpón</h3><p>Litros, partos y tactos en papel, imposibles de buscar cuando hacen falta.</p><p class="ahora">Ahora se carga en el momento y queda ordenado por vaca y por fecha.</p></div><div class="dolor"><p class="antes">Antes</p><h3>Enterarte tarde</h3><p>Para saber cómo viene el tambo tenés que ir, llamar o esperar a fin de mes.</p><p class="ahora">Ahora lo ves al día, desde tu casa: litros, partos, tareas y comida.</p></div></div></div></section>
@@ -231,7 +231,7 @@ footer a{text-decoration:none}
   <p class="nota-cta">WhatsApp +54 9 3562 52-6469 · Te contesta una persona, sin compromiso. Si no te sirve, no te vamos a insistir.</p>
 </div></section>
 </main>
-<footer><div class="env"><span class="marca" style="color:#F4EFE3;font-size:21px"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#3E5B3A"/><g fill="none" stroke="#F4EFE3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 30V14"/><path d="M20 14l-6-4M20 14l6-4M20 14l-4 6M20 14l4 6"/><path d="M17 30l3-16 3 16"/><path d="M9 30h22"/></g><circle cx="20" cy="14" r="1.6" fill="#D9A441"/></svg> TamboApp</span><span>Hecho en un tambo de Santa Fe · © 2026</span></div></footer>
+<footer><div class="env"><span class="marca" style="color:#F4EFE3;font-size:21px"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#3E5B3A"/><g fill="none" stroke="#F4EFE3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 30V14"/><path d="M20 14l-6-4M20 14l6-4M20 14l-4 6M20 14l4 6"/><path d="M17 30l3-16 3 16"/><path d="M9 30h22"/></g><circle cx="20" cy="14" r="1.6" fill="#D9A441"/></svg> TamboApp</span><span>Hecho en un tambo del interior · © 2026</span></div></footer>
 <a class="btn btn-wa cta-fija oculta" href="https://wa.me/5493562526469?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20TamboApp%20y%20quiero%20que%20me%20la%20muestren.%20Mi%20tambo%20est%C3%A1%20en%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.1-1.2-.2-.2-.4-.3z"/></svg>Escribinos por WhatsApp</a>
 <script>
 // El botón fijo de WhatsApp aparece recién cuando el del principio ya no se ve (y se esconde en el cierre).
